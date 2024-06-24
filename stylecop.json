@@ -1,0 +1,11 @@
+{
+    "settings": {
+        "documentationRules": {
+            "companyName": "Frasquito Games",
+            "copyrightText": "Copyright © Frasquito Games"
+        },
+        "orderingRules": {
+            "usingDirectivesPlacement": "outsideNamespace"
+        }
+    }
+}

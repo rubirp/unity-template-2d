@@ -1,0 +1,74 @@
+# .editorconfig
+
+# top-most EditorConfig file
+root = true
+
+# C# files
+[*.cs]
+# Indentation style and size
+indent_style = space
+indent_size = 4
+
+# Charset
+charset = utf-8
+
+# End of line configuration
+end_of_line = crlf
+insert_final_newline = true
+
+# C# specific settings
+[*.cs]
+# New line at the end of files
+insert_final_newline = true
+
+# Nomenclature
+# Naming conventions are not directly enforceable via .editorconfig, but can be enforced through analyzers
+dotnet_naming_rule.methods_and_properties_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.methods_and_properties_should_be_pascal_case.symbols = method, property
+dotnet_naming_rule.methods_and_properties_should_be_pascal_case.style = pascal_case_style
+
+dotnet_naming_symbols.method.applicable_kinds = method
+dotnet_naming_symbols.property.applicable_kinds = property
+
+dotnet_naming_style.pascal_case_style.capitalization = pascal_case
+
+# Field names
+dotnet_naming_rule.private_fields_should_be_camel_case.severity = suggestion
+dotnet_naming_rule.private_fields_should_be_camel_case.symbols = field
+dotnet_naming_rule.private_fields_should_be_camel_case.style = camel_case_style
+
+dotnet_naming_symbols.field.applicable_accessibilities = private
+
+dotnet_naming_style.camel_case_style.capitalization = camel_case
+
+# Variable names
+dotnet_naming_rule.local_variables_should_be_camel_case.severity = suggestion
+dotnet_naming_rule.local_variables_should_be_camel_case.symbols = local_variable
+dotnet_naming_rule.local_variables_should_be_camel_case.style = camel_case_style
+
+dotnet_naming_symbols.local_variable.applicable_kinds = local_variable
+
+# Accessibility levels for classes, methods, and properties
+dotnet_style_require_accessibility_modifiers = always
+
+# Commenting style
+# There are no direct settings for commenting styles in .editorconfig, 
+# but StyleCop or Roslyn analyzers can be used to enforce commenting rules.
+
+# Apply specific C# code style rules
+csharp_prefer_braces = true:suggestion
+csharp_preserve_single_line_statements = true
+csharp_new_line_before_open_brace = all
+csharp_new_line_between_method_declaration_and_first_parameter = true
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_expression_bodied_methods = when_possible:suggestion
+csharp_style_expression_bodied_properties = when_possible:suggestion
+csharp_style_expression_bodied_operators = when_possible:suggestion
+csharp_style_expression_bodied_constructors = when_possible:suggestion
+csharp_style_expression_bodied_indexers = when_possible:suggestion
+csharp_prefer_static_local_function = true:suggestion
+csharp_style_prefer_auto_properties = true:suggestion
+csharp_style_prefer_conditional_expression_over_assignment = true:suggestion
+csharp_style_prefer_conditional_expression_over_return = true:suggestion
