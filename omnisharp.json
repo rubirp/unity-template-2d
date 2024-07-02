@@ -1,8 +1,33 @@
 {
-    "RoslynExtensionsOptions": {
-        "enableAnalyzersSupport": true
+    "fileOptions": {
+        "systemExcludeSearchPatterns": [
+            "**/Library/",
+            "**/Temp/",
+            "**/obj/",
+            "**/Build/",
+            "**/Builds/",
+            "**/.git/",
+            "**/Logs/",
+            "**/Packages/",
+            "**/ProjectSettings/",
+            "**/UserSettings/"
+        ],
+        "userExcludeSearchPatterns": [
+            "**/Library/",
+            "**/Temp/",
+            "**/obj/",
+            "**/Build/",
+            "**/Builds/",
+            "**/.git/",
+            "**/Logs/",
+            "**/Packages/",
+            "**/ProjectSettings/",
+            "**/UserSettings/"
+        ]
     },
-    "FormattingOptions": {
-        "enableEditorConfigSupport": true
+    "RoslynExtensionsOptions": {
+        "enableAnalyzersSupport": true,
+        "enableImportCompletion": true,
+        "locationPaths": []
     }
 }
